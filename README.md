@@ -488,7 +488,32 @@ $
 ```
 ## Bundle 2
 
-### exercises 1
+## Questions for bundle 2
+
+```
+Exercises 1
+
+- Create a new branch named `ft/bundle-2`
+- Add new changes to your project. create a new page named `services.html` and add some changes
+- Commit your changes and create a Pull Request against the `main` branch in your github repository
+- Request a review and make sure your Pull request gets merged (Look for someone to merge your PR)
+
+Exercise 2
+
+- Checkout your `main` branch and pull the latest changes
+- Create a new branch named `ft/service-redesign`
+- Add new changes to the `service.html` page
+- commit and push them
+- create a new PR for your changes
+- go back to your `main` branch and add again new changes to your `service.html` page, you can add different changes but make sure to affect the same part(line of code) as you did in the other PR
+- Commit and push those changes
+- Now go back to the Github PR you had created for the `ft/service-redesign`branch, you will then see that you have conflicts with the `main` branch
+- In your project checkout the `ft/service-redesign`branch
+- Compare the `ft/service-redesign`with the `main` branch using git diff and observe the changes
+- Using git merge, merge the `main` branch with `ft/service-redesign` branch and commit and push you changes again
+```
+
+### exercises 1 & exrcises 2 commands used in terminal
 ```
 
 user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
@@ -755,3 +780,4 @@ nothing to commit, working tree clean
 user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
 $
 ```
+
