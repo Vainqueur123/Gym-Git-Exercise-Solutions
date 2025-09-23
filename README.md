@@ -177,3 +177,315 @@ $
 ```
 
 ### exercises 2
+
+```
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (dev)
+$ git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ 
+$
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git init 
+Reinitialized existing Git repository in C:/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions/.git/
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git branch -m master
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (master)
+$^Cr@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (dev)2f71...))th>...]ath>...]--checkout|--merge|--re
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash 
+No local changes to save
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash list
+stash@{0}: WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash about
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'about'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash about.html
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'about.html'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash <about.html>
+bash: syntax error near unexpected token `newline'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash push Bundle1/about.html
+error: pathspec ':(prefix:0)Bundle1/about.html' did not match any file(s) known to git
+Did you forget to 'git add'?
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash push Bundle1/about.html
+Saved working directory and index state WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash push Bundle1/home.html
+Saved working directory and index state WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash pop Bundle1/about.html
+error: Bundle1/about.html is not a valid reference
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash list
+stash@{0}: WIP on main: 7ec2f71 make simple changes in exercises1
+stash@{1}: WIP on main: 7ec2f71 make simple changes in exercises1
+stash@{2}: WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout stash@{1}
+Note: switching to 'stash@{1}'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at da3dbca WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions ((da3dbca...))
+$ git stash push Bundle1/home.html
+No local changes to save
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions ((da3dbca...))
+$ git stash push Bundle1/home.html
+Saved working directory and index state WIP on (no branch): da3dbca WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions ((da3dbca...))
+$ git checkout main 
+Previous HEAD position was da3dbca WIP on main: 7ec2f71 make simple changes in exercises1
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout stash@{1}
+Note: switching to 'stash@{1}'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 73c9f77 WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions ((73c9f77...))
+$ git checkout main
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  73c9f77 WIP on main: 7ec2f71 make simple changes in exercises1
+  14152b6 index on main: 7ec2f71 make simple changes in exercises1
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 73c9f77
+
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash list
+stash@{0}: WIP on (no branch): da3dbca WIP on main: 7ec2f71 make simple changes in exercises1
+stash@{1}: WIP on main: 7ec2f71 make simple changes in exercises1
+stash@{2}: WIP on main: 7ec2f71 make simple changes in exercises1
+stash@{3}: WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash pop stash@{1}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Bundle1/home.html
+
+Dropped stash@{1} (73c9f773fe4e49803b5b17e26b1038a34a1b1d6d)
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash pop stash@{2}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Bundle1/home.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Dropped stash@{2} (8c5b69fefaa1530bfcfdfcc5f1a557d8811842af)
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash push Bundle1/home.html
+Saved working directory and index state WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git liat
+git: 'liat' is not a git command. See 'git --help'.
+
+The most similar commands are
+        clean
+        mktag
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash list
+stash@{0}: WIP on main: 7ec2f71 make simple changes in exercises1
+stash@{1}: WIP on (no branch): da3dbca WIP on main: 7ec2f71 make simple changes in exercises1
+stash@{2}: WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash pop stash@{2}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Bundle1/about.html
+        new file:   Bundle1/home.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Dropped stash@{2} (da3dbcaca046c5a5d18be9ec8aa5dda98c65987b)
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git restore --staged
+fatal: you must specify path(s) to restore
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git restore --staged .
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git add Bundle1/about.html 
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "add about.html omly"
+[main 6d07445] add about.html omly
+ 1 file changed, 22 insertions(+)
+ create mode 100644 Bundle1/about.html
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash list 
+stash@{0}: WIP on main: 7ec2f71 make simple changes in exercises1
+stash@{1}: WIP on (no branch): da3dbca WIP on main: 7ec2f71 make simple changes in exercises1
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash pop stash@{0}
+error: The following untracked working tree files would be overwritten by merge:
+        Bundle1/home.html
+Please move or remove them before you merge.
+Aborting
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Bundle1/home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+The stash entry is kept in case you need it again.
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ rm Bundle1/home.html
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git stash pop stash@{0}
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Bundle1/home.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Dropped stash@{0} (2aa34d34fa47a7964afcecd83b02dd9f13808b9e)
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git add Bundle1/home.html 
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "bring back home"
+[main db506aa] bring back home
+ 1 file changed, 15 insertions(+)
+ create mode 100644 Bundle1/home.html
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git reset
+Unstaged changes after reset:
+M       README.md
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$  git add .
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "push all restored changes "
+[main 16ff993] push all restored changes
+ 1 file changed, 176 insertions(+)
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git push 
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 2.88 KiB | 1.44 MiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions.git
+   7ec2f71..16ff993  main -> main
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$
+```
+## Bundle 2
+
+### exercises 1
