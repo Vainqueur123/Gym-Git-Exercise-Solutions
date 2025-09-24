@@ -781,3 +781,571 @@ user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Soluti
 $
 ```
 
+
+
+## buddle 3
+## Questions for bundle 3
+
+### exercises 1 & exercises 2
+
+```user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git pull origin main 
+From https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git branch -b ft/team-page
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git add .
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git cpmmit -m "feat: describe team "
+git: 'cpmmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m "feat: describe team "
+[ft/team-page be6e0b9] feat: describe team
+ 2 files changed, 22 insertions(+)
+ create mode 100644 .vscode/settings.json
+ create mode 100644 team.html
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git push origin ft/team-page 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 739 bytes | 246.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout main 
+error: Your local changes to the following files would be overwritten by checkout:
+        team.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git add .
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit 
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions/.git/COMMIT_EDITMSG to Unix format...
+Aborting commit due to empty commit message.
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ gi
+bash: gi: command not found
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m "add little changes"
+[ft/team-page 2602e01] add little changes
+ 1 file changed, 2 deletions(-)
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/contanct-page
+Switched to a new branch 'ft/contanct-page'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/contanct-page)
+$ git checkout ft/team-page 
+Switched to branch 'ft/team-page'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git log
+commit 2602e018d3285b54d728693708cfb019bb1457b4 (HEAD -> ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:49:16 2025 +0200
+
+    add little changes
+
+commit be6e0b9cdcb87d1a35cd05cb392a9f921f45118f (origin/ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+:
+commit 2602e018d3285b54d728693708cfb019bb1457b4 (HEAD -> ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:49:16 2025 +0200
+
+    add little changes
+
+commit be6e0b9cdcb87d1a35cd05cb392a9f921f45118f (origin/ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+:
+commit 2602e018d3285b54d728693708cfb019bb1457b4 (HEAD -> ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:49:16 2025 +0200
+
+    add little changes
+
+commit be6e0b9cdcb87d1a35cd05cb392a9f921f45118f (origin/ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+:
+commit 2602e018d3285b54d728693708cfb019bb1457b4 (HEAD -> ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:49:16 2025 +0200
+
+    add little changes
+
+commit be6e0b9cdcb87d1a35cd05cb392a9f921f45118f (origin/ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:40:42 2025 +0200
+
+    feat: describe team
+
+commit 4b4af298e45ffc4535216cd6d6d64545b3e67340 (origin/main, origin/HEAD, main, ft/contanct-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 17:53:09 2025 +0200
+
+    add changes in the readme
+
+commit 28a1b07cae787f83344940ceb248084f770e24bc
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 17:20:38 2025 +0200
+
+    add command used in README
+
+commit 068cda4b4ceb14e08cb3044abbdd4d592951571c
+Merge: 3410928 eea857f
+Author: Vainqueur Ndamukunda <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 17:12:10 2025 +0200
+
+    Merge pull request #2 from Vainqueur123/ft/service-redesign
+
+    change in services
+
+commit eea857fae6a552a461bae22429a62e9f088c77b1
+Merge: 97c053b 3410928
+Author: Vainqueur Ndamukunda <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 17:11:59 2025 +0200
+
+    Merge branch 'main' into ft/service-redesign
+
+commit 341092835c030ba0d7e827f2940997903ce097e6
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 17:00:46 2025 +0200
+
+    again add changes in the service page
+
+commit 97c053b605974b1228a41a833879169e6d0c63b6 (origin/ft/service-redesign, ft/service-redesign)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 16:56:57 2025 +0200
+
+    change in services
+
+commit 6bbfb9ffced89700073ea01d7460b2774e06bf5d
+Merge: 16ff993 a844167
+Author: Vainqueur Ndamukunda <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 16:49:49 2025 +0200
+
+    Merge pull request #1 from Vainqueur123/ft/bundle-2
+
+    add services page
+
+commit a844167199eb0db99f11b97e95011f053d4ca7f8
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 16:37:38 2025 +0200
+
+    add services page
+
+commit 16ff993952b76c1e471115d04db7c8c3458de579
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 16:32:41 2025 +0200
+
+    push all restored changes
+
+commit db506aaaa4b227158f0d1f85604d4ab0af406c96
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 16:19:46 2025 +0200
+
+    bring back home
+
+commit 6d0744508d0dd8a97c77fa984efa2d836a7af9f0
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 23 16:09:51 2025 +0200
+
+    add about.html omly
+
+commit 7ec2f710fc4d27a56d3d4bc79eb7951eeb30ee80
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Mon Sep 22 15:49:48 2025 +0200
+
+    make simple changes in exercises1
+
+commit ce9e56244a735e9dc8faac6f066cf6d680c5cfb9
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Thu Sep 18 18:05:14 2025 +0200
+
+    feat: make service page
+
+commit 4b0be68c4abf44d22a8aebc2b17e00ecd08caaa9
+Author: Vainqueur Ndamukunda <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 16 14:23:44 2025 +0200
+
+    Initial commit
+(END)
+
+    feat: make service page
+
+commit 4b0be68c4abf44d22a8aebc2b17e00ecd08caaa9
+Author: Vainqueur Ndamukunda <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 16 14:23:44 2025 +0200
+
+    Initial commit
+(END)
+
+    feat: make service page
+
+commit 4b0be68c4abf44d22a8aebc2b17e00ecd08caaa9
+Author: Vainqueur Ndamukunda <ndamukundavainqueur@gmail.com>
+Date:   Tue Sep 16 14:23:44 2025 +0200
+
+    Initial commit
+commit 2602e018d3285b54d728693708cfb019bb1457b4 (HEAD -> ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:49:16 2025 +0200
+
+    add little changes
+
+commit be6e0b9cdcb87d1a35cd05cb392a9f921f45118f (origin/ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+...skipping...
+
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  ESC-j             *  Forward  one file line (or N file lines).
+  ESC-k             *  Backward one file line (or N file lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  ESC-b             *  Backward one window, but don't stop at beginning-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          SEARCHING
+
+  /pattern          *  Search forward for (N-th) matching line.
+  ?pattern          *  Search backward for (N-th) matching line.
+  n                 *  Repeat previous search (for N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ^O^N  ^On         *  Search forward for (N-th) OSC8 hyperlink.
+  ^O^P  ^Op         *  Search backward for (N-th) OSC8 hyperlink.
+  ^O^L  ^Ol            Jump to the currently selected OSC8 hyperlink.
+  ESC-u                Undo (toggle) search highlighting.
+  ESC-U                Clear search highlighting.
+  &pattern          *  Display only matching lines.
+        ---------------------------------------------------
+                Search is case-sensitive unless changed with -i or -I.
+        A search pattern may begin with one or more of:
+        ^N or !  Search for NON-matching lines.
+        ^E or *  Search multiple files (pass thru END OF FILE).
+        ^F or @  Start search at FIRST file (for /) or last file (for ?).
+        ^K       Highlight matches, but don't move (KEEP position).
+        ^R       Don't use REGULAR EXPRESSIONS.
+        ^S n     Search for match in n-th parenthesized subpattern.
+        ^W       WRAP search if no match found.
+        ^L       Enter next character literally into pattern.
+ ---------------------------------------------------------------------------
+
+                           JUMPING
+
+  g  <  ESC-<       *  Go to first line in file (or line N).
+  G  >  ESC->       *  Go to last line in file (or line N).
+  p  %              *  Go to beginning of file (or N percent into file).
+  t                 *  Go to the (N-th) next tag.
+  T                 *  Go to the (N-th) previous tag.
+  {  (  [           *  Find close bracket } ) ].
+  }  )  ]           *  Find open bracket { ( [.
+  ESC-^F <c1> <c2>  *  Find close bracket <c2>.
+  ESC-^B <c1> <c2>  *  Find open bracket <c1>.
+        ---------------------------------------------------
+        Each "find close bracket" command goes forward to the close bracket
+          matching the (N-th) open bracket in the top line.
+        Each "find open bracket" command goes backward to the open bracket
+          matching the (N-th) close bracket in the bottom line.
+
+  m<letter>            Mark the current top line with <letter>.
+  M<letter>            Mark the current bottom line with <letter>.
+  '<letter>            Go to a previously marked position.
+  ''                   Go to the previous position.
+  ^X^X                 Same as '.
+  ESC-m<letter>        Clear a mark.
+        ---------------------------------------------------
+        A mark is any upper-case or lower-case letter.
+        Certain marks are predefined:
+             ^  means  beginning of the file
+             $  means  end of the file
+ ---------------------------------------------------------------------------
+
+                        CHANGING FILES
+
+  :e [file]            Examine a new file.
+  ^X^V                 Same as :e.
+  :n                *  Examine the (N-th) next file from the command line.
+  :p                *  Examine the (N-th) previous file from the command line.
+  :x                *  Examine the first (or N-th) file from the command line.
+  ^O^O                 Open the currently selected OSC8 hyperlink.
+  :d                   Delete the current file from the command line list.
+  =  ^G  :f            Print current file name.
+ ---------------------------------------------------------------------------
+
+                    MISCELLANEOUS COMMANDS
+
+  -<flag>              Toggle a command line option [see OPTIONS below].
+  --<name>             Toggle a command line option, by name.
+  _<flag>              Display the setting of a command line option.
+  __<name>             Display the setting of an option, by name.
+  +cmd                 Execute the less cmd each time a new file is examined.
+
+  !command             Execute the shell command with $SHELL.
+  #command             Execute the shell command, expanded like a prompt.
+  |Xcommand            Pipe file between current pos & mark X to shell command.
+  s file               Save input to a file.
+  v                    Edit the current file with $VISUAL or $EDITOR.
+  V                    Print version number of "less".
+ ---------------------------------------------------------------------------
+
+                           OPTIONS
+
+        Most options may be changed either on the command line,
+        or from within less by using the - or -- command.
+        Options may be given in one of two forms: either a single
+        character preceded by a -, or a name preceded by --.
+
+  -?  ........  --help
+                  Display help (from command line).
+  -a  ........  --search-skip-screen
+                  Search skips current screen.
+  -A  ........  --SEARCH-SKIP-SCREEN
+                  Search starts just after target line.
+  -b [N]  ....  --buffers=[N]
+                  Number of buffers.
+  -B  ........  --auto-buffers
+                  Don't automatically allocate buffers for pipes.
+  -c  ........  --clear-screen
+                  Repaint by clearing rather than scrolling.
+  -d  ........  --dumb
+                  Dumb terminal.
+  -D xcolor  .  --color=xcolor
+                  Set screen colors.
+  -e  -E  ....  --quit-at-eof  --QUIT-AT-EOF
+                  Quit at end of file.
+  -f  ........  --force
+                  Force open non-regular files.
+  -F  ........  --quit-if-one-screen
+                  Quit if entire file fits on first screen.
+  -g  ........  --hilite-search
+                  Highlight only last match for searches.
+  -G  ........  --HILITE-SEARCH
+                  Don't highlight any matches for searches.
+  -h [N]  ....  --max-back-scroll=[N]
+                  Backward scroll limit.
+  -i  ........  --ignore-case
+                  Ignore case in searches that do not contain uppercase.
+  -I  ........  --IGNORE-CASE
+                  Ignore case in all searches.
+  -j [N]  ....  --jump-target=[N]
+                  Screen position of target lines.
+  -J  ........  --status-column
+                  Display a status column at left edge of screen.
+  -k file  ...  --lesskey-file=file
+                  Use a compiled lesskey file.
+  -K  ........  --quit-on-intr
+                  Exit less in response to ctrl-C.
+  -L  ........  --no-lessopen
+                  Ignore the LESSOPEN environment variable.
+  -m  -M  ....  --long-prompt  --LONG-PROMPT
+                  Set prompt style.
+  -n .........  --line-numbers
+                  Suppress line numbers in prompts and messages.
+  -N .........  --LINE-NUMBERS
+                  Display line number at start of each line.
+  -o [file] ..  --log-file=[file]
+                  Copy to log file (standard input only).
+  -O [file] ..  --LOG-FILE=[file]
+                  Copy to log file (unconditionally overwrite).
+  -p pattern .  --pattern=[pattern]
+                  Start at pattern (from command line).
+  -P [prompt]   --prompt=[prompt]
+                  Define new prompt.
+  -q  -Q  ....  --quiet  --QUIET  --silent --SILENT
+                  Quiet the terminal bell.
+  -r  -R  ....  --raw-control-chars  --RAW-CONTROL-CHARS
+                  Output "raw" control characters.
+  -s  ........  --squeeze-blank-lines
+                  Squeeze multiple blank lines.
+  -S  ........  --chop-long-lines
+                  Chop (truncate) long lines rather than wrapping.
+  -t tag  ....  --tag=[tag]
+                  Find a tag.
+  -T [tagsfile] --tag-file=[tagsfile]
+                  Use an alternate tags file.
+  -u  -U  ....  --underline-special  --UNDERLINE-SPECIAL
+                  Change handling of backspaces, tabs and carriage returns.
+  -V  ........  --version
+                  Display the version number of "less".
+  -w  ........  --hilite-unread
+                  Highlight first new line after forward-screen.
+  -W  ........  --HILITE-UNREAD
+                  Highlight first new line after any forward movement.
+  -x [N[,...]]  --tabs=[N[,...]]
+                  Set tab stops.
+  -X  ........  --no-init
+                  Don't use termcap init/deinit strings.
+  -y [N]  ....  --max-forw-scroll=[N]
+                  Forward scroll limit.
+  -z [N]  ....  --window=[N]
+                  Set size of window.
+  -" [c[c]]  .  --quotes=[c[c]]
+                  Set shell quote characters.
+  -~  ........  --tilde
+                  Don't display tildes after end of file.
+  -# [N]  ....  --shift=[N]
+                  Set horizontal scroll amount (0 = one half screen width).
+
+                --exit-follow-on-close
+                  Exit F command on a pipe when writer closes pipe.
+                --file-size
+                  Automatically determine the size of the input file.
+                --follow-name
+                  The F command changes files if the input file is renamed.
+                --form-feed
+                  Stop scrolling when a form feed character is reached.
+                --header=[L[,C[,N]]]
+                  Use L lines (starting at line N) and C columns as headers.
+                --incsearch
+                  Search file as each pattern character is typed in.
+                --intr=[C]
+                  Use C instead of ^X to interrupt a read.
+                --lesskey-context=text
+                  Use lesskey source file contents.
+                --lesskey-src=file
+                  Use a lesskey source file.
+                --line-num-width=[N]
+                  Set the width of the -N line number field to N characters.
+                --match-shift=[N]
+                  Show at least N characters to the left of a search match.
+                --modelines=[N]
+                  Read N lines from the input file and look for vim modelines.
+                --mouse
+                  Enable mouse input.
+                --no-edit-warn
+                  Don't warn when using v command on a file opened via LESSOPEN.
+                --no-keypad
+                  Don't send termcap keypad init/deinit strings.
+                --no-histdups
+                  Remove duplicates from command history.
+                --no-number-headers
+                  Don't give line numbers to header lines.
+                --no-paste
+                  Ignore pasted input.
+                --no-search-header-lines
+                  Searches do not include header lines.
+                --no-search-header-columns
+                  Searches do not include header columns.
+                --no-search-headers
+                  Searches do not include header lines or columns.
+                --no-vbell
+HELP -- Press RETURN for more, or q when done
