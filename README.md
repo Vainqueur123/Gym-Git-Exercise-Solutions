@@ -788,7 +788,8 @@ $
 
 ### exercises 1 & exercises 2
 
-```user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+```
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
 $ git pull origin main 
 From https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions
  * branch            main       -> FETCH_HEAD
@@ -1349,3 +1350,99 @@ Author: Rumanzi <ndamukundavainqueur@gmail.com>
                   Searches do not include header lines or columns.
                 --no-vbell
 HELP -- Press RETURN for more, or q when done
+
+
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/contanct-page 
+M       README.md
+Switched to branch 'ft/contanct-page'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/contanct-page)
+$ git checkout ft/team-page 
+M       README.md
+Switched to branch 'ft/team-page'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git log ft/team-page -1
+commit 2602e018d3285b54d728693708cfb019bb1457b4 (HEAD -> ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:49:16 2025 +0200
+
+    add little changes
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/contanct-page
+M       README.md
+Switched to branch 'ft/contanct-page'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/contanct-page)
+$ git add .
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/contanct-page)
+$ git commit -m "make changes froom team page"
+[ft/contanct-page acd7f2a] make changes froom team page
+ 1 file changed, 568 insertions(+)
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/contanct-page)
+$ git push origin ft/contanct-page 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 6.99 KiB | 2.33 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contanct-page' on GitHub by visiting:
+remote:      https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions/pull/new/ft/contanct-page
+remote:
+To https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contanct-page -> ft/contanct-page
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/contanct-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git add .
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git commit -m "create faq page "
+[ft/faq-page cb4195d] create faq page
+ 1 file changed, 17 insertions(+)
+ create mode 100644 faq.html
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push origin ft/faq-page 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 709 bytes | 354.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/Vainqueur123/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+user@NSANZABAGANWA MINGW64 /c/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git log ft/team-page 
+commit 2602e018d3285b54d728693708cfb019bb1457b4 (ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:49:16 2025 +0200
+
+    add little changes
+
+commit be6e0b9cdcb87d1a35cd05cb392a9f921f45118f (origin/ft/team-page)
+Author: Rumanzi <ndamukundavainqueur@gmail.com>
+Date:   Wed Sep 24 15:40:42 2025 +0200
+
+    feat: describe team
+
+commit 4b4af298e45ffc4535216cd6d6d64545b3e67340 (origin/main, origin/HEAD, main)
+:
+
+```
